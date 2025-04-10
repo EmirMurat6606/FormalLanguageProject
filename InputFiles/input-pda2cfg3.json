@@ -1,0 +1,26 @@
+{
+  "States": ["p", "q0", "q1", "q2"],
+  "Alphabet": ["0", "1"],
+  "StackAlphabet": ["0", "1", "Z0", "ZZ"],
+  "Transitions": [
+    {"from": "q0", "input": "", "stacktop": "Z0", "to": "q1", "replacement": ["Z0"]},
+    {"from": "q1", "input": "1", "stacktop": "1", "to": "q1", "replacement": []},
+    {"from": "q0", "input": "", "stacktop": "0", "to": "q1", "replacement": ["0"]},
+    {"from": "q1", "input": "0", "stacktop": "0", "to": "q1", "replacement": []},
+    {"from": "q0", "input": "1", "stacktop": "0", "to": "q0", "replacement": ["1", "0"]},
+    {"from": "q0", "input": "1", "stacktop": "1", "to": "q0", "replacement": ["1", "1"]},
+    {"from": "q2", "input": "", "stacktop": "1", "to": "q2", "replacement": []},
+    {"from": "q2", "input": "", "stacktop": "Z0", "to": "q2", "replacement": []},
+    {"from": "q0", "input": "", "stacktop": "1", "to": "q1", "replacement": ["1"]},
+    {"from": "q0", "input": "0", "stacktop": "0", "to": "q0", "replacement": ["0", "0"]},
+    {"from": "q0", "input": "1", "stacktop": "Z0", "to": "q0", "replacement": ["1", "Z0"]},
+    {"from": "q2", "input": "", "stacktop": "ZZ", "to": "q2", "replacement": []},
+    {"from": "q0", "input": "0", "stacktop": "1", "to": "q0", "replacement": ["0", "1"]},
+    {"from": "q1", "input": "", "stacktop": "Z0", "to": "q2", "replacement": ["Z0"]},
+    {"from": "q2", "input": "", "stacktop": "0", "to": "q2", "replacement": []},
+    {"from": "p", "input": "", "stacktop": "ZZ", "to": "q0", "replacement": ["Z0", "ZZ"]},
+    {"from": "q0", "input": "0", "stacktop": "Z0", "to": "q0", "replacement": ["0", "Z0"]}
+  ],
+  "StartState": "p",
+  "StartStack": "ZZ"
+}

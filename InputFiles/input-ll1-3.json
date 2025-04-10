@@ -1,0 +1,15 @@
+{
+  "Variables": ["E", "E'", "T", "T'", "F"],
+  "Terminals": ["+", "*", "(", ")", "id"],
+  "Productions": [
+    {"head": "E", "body": ["T", "E'"]},
+    {"head": "E'", "body": ["+", "T", "E'"]},
+    {"head": "E'", "body": []},
+    {"head": "T", "body": ["F", "T'"]},
+    {"head": "T'", "body": ["*", "F", "T'"]},
+    {"head": "T'", "body": []},
+    {"head": "F", "body": ["(", "E", ")"]},
+    {"head": "F", "body": ["id"]}
+  ],
+  "Start": "E"
+}
