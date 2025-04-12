@@ -25,10 +25,9 @@ All JSON-formatted input files used to test and run algorithms are located in th
 
 ## 🧠 Implemented Algorithms
 
-### 🧾 1. LL(1) Table Construction and Parsing
+### 🧾 1. LL(1) Table Construction
 - First and Follow set computation
 - LL(1) parse table generation
-- String parsing using LL(1) algorithm
 
 ### 🧮 2. CYK Parsing Algorithm
 - Support for parsing using the CYK (Cocke–Younger–Kasami) algorithm
